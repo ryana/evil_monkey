@@ -1,0 +1,21 @@
+= Evil Monkey
+
+Rails plugin to keep track of monkey patches.  Simply wrap any monkeypatches with evil_monkey,
+and evil_monkey will explode when you upgrade Rails versions.
+
+
+  evil_monkey('2.3.2') do
+
+    class << ActiveRecord::Base
+      def establish_connection
+        #bleh
+      end
+    end
+
+  end
+
+As soon as Rails.version does not return '2.3.2', evil_monkey will raise an exception.
+
+This also works in tests, where I find the majority of monkeypatching happens
+
+
