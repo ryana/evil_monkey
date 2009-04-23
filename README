@@ -1,6 +1,6 @@
 = Evil Monkey
 
-Rails plugin to keep track of monkey patches.  Simply wrap any monkeypatches with evil_monkey,
+Rails plugin to keep track of monkeypatches.  Simply wrap any monkeypatches with evil_monkey,
 and evil_monkey will explode when you upgrade Rails versions.
 
 
@@ -19,3 +19,12 @@ As soon as Rails.version does not return '2.3.2', evil_monkey will raise an exce
 This also works in tests, where I find the majority of monkeypatching happens
 
 
+== License
+
+Inequal Opportunity is released under the MIT license.
+
+
+== Support
+
+Just email me at ryan@angilly.com with questions, bugs,
+or patches
